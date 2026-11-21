@@ -517,3 +517,13 @@ html[lang="kn"] .acc-cap b{font-family:var(--kn-serif);font-size:1.15rem}
 .deck-cap b{font-family:var(--serif);font-size:1.35rem;font-weight:600;color:var(--navy)}
 html[lang="kn"] .deck-cap b{font-family:var(--kn-serif);font-size:1.12rem}
 @media (max-width:700px){.deck{height:470px}.deck-card{bottom:84px}}
+
+/* trust panel (family) */
+.trust{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:1.6rem;align-items:center;margin:2.2rem 0 .5rem;padding:1.2rem;border-radius:24px;background:linear-gradient(135deg,var(--ivory),#fff);border:1px solid rgba(200,160,74,.4);box-shadow:0 24px 50px -30px rgba(10,35,80,.35);position:relative}
+.trust::before{content:"";position:absolute;inset:8px;border:1px dashed rgba(200,160,74,.35);border-radius:18px;pointer-events:none}
+.trust-img{border-radius:160px 160px 16px 16px;overflow:hidden;border:2px solid var(--gold-2);box-shadow:0 0 0 6px #fff,0 18px 40px -20px rgba(10,35,80,.5)}
+.trust-img img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.trust h3{font-size:1.6rem;color:var(--navy);margin:.5rem 0 .7rem}
+.trust p{font-size:.96rem;color:var(--muted);margin-bottom:.8rem}
+@media (max-width:640px){.trust{grid-template-columns:1fr}.trust-img{max-width:300px}}
+.stat b span{font-size:inherit!important;color:inherit}
