@@ -543,3 +543,11 @@ html[lang="kn"] .dvg-portrait figcaption{font-family:var(--kn-serif);font-size:1
 .ccard.tall .cc-body{display:flex;gap:.9rem;align-items:center;padding:1rem 1.2rem 1.2rem}
 .ccard.tall .cc-logo{width:78px;margin:0;flex:none;padding:5px;border-radius:12px;background:#fff}
 .ccard.tall .cc-body b{font-size:1.25rem;margin-bottom:.15rem}
+
+/* Geethashankara flagship */
+.flagship{background:linear-gradient(180deg,#fff, var(--ivory))}
+.kn-inline{font-family:var(--kn-serif);color:var(--red);font-size:.7em;margin-left:.3rem}
+.meta-line{font-size:.85rem;color:var(--blue);font-weight:600;border-top:1px solid rgba(200,160,74,.4);padding-top:.9rem;margin-top:1.2rem}
+.event.featured{border:1.5px solid var(--gold);background:linear-gradient(135deg,#fffaf0,#fff)}
+.event.featured .date{background:linear-gradient(150deg,var(--red),#7d1420)}
+.event a{color:var(--red);font-weight:600}

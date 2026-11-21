@@ -156,6 +156,18 @@
     ['a09', 'The awardee and the Balaga', 'ಪುರಸ್ಕೃತರು ಮತ್ತು ಬಳಗ'],
     ['a10', 'With a portrait of D.V. Gundappa', 'ಡಿ.ವಿ. ಗುಂಡಪ್ಪನವರ ಚಿತ್ರದೊಂದಿಗೆ']
   ].map(function (x) { return { src: 'assets/dvg/' + x[0] + '.webp', en: x[1], kn: x[2] }; });
+  var GEETHA = [
+    ['s00', 'Geethashankara on stage: Sri Shankara Jayanti, 2 May 2025', 'ಗೀತಶಂಕರ ವೇದಿಕೆಯಲ್ಲಿ: ಶ್ರೀ ಶಂಕರ ಜಯಂತಿ, 2 ಮೇ 2025'],
+    ['s01', 'Vidwan Dr. R.S. Nandakumar sings the songs of Sri Shankaracharya', 'ವಿದ್ವಾನ್ ಡಾ. ಆರ್.ಎಸ್. ನಂದಕುಮಾರ್ ಅವರಿಂದ ಶ್ರೀ ಶಂಕರಾಚಾರ್ಯ ವಿರಚಿತ ಗೀತೆಗಳ ಗಾಯನ'],
+    ['s02', 'Vidwan Dr. R.S. Nandakumar before the image of Adi Shankara', 'ಆದಿ ಶಂಕರರ ಚಿತ್ರದ ಮುಂದೆ ವಿದ್ವಾನ್ ಡಾ. ಆರ್.ಎಸ್. ನಂದಕುಮಾರ್'],
+    ['s03', 'Vidwan Dr. R.S. Nandakumar explains a verse between songs', 'ಹಾಡುಗಳ ನಡುವೆ ಪದ್ಯದ ವಿವರಣೆ: ವಿದ್ವಾನ್ ಡಾ. ಆರ್.ಎಸ್. ನಂದಕುಮಾರ್'],
+    ['s04', 'Sri Shankara Jayanti, Vaishakha Shukla Panchami', 'ಶ್ರೀ ಶಂಕರ ಜಯಂತಿ, ವೈಶಾಖ ಶುಕ್ಲ ಪಂಚಮಿ'],
+    ['s05', 'Raga and meaning together', 'ರಾಗ ಮತ್ತು ಅರ್ಥ ಜೊತೆಜೊತೆಯಲ್ಲಿ'],
+    ['s06', 'With the accompanists', 'ಪಕ್ಕವಾದ್ಯದವರೊಂದಿಗೆ'],
+    ['s07', 'A moment of the concert', 'ಕಛೇರಿಯ ಒಂದು ಕ್ಷಣ'],
+    ['s08', 'In conversation with the audience', 'ಶ್ರೋತೃಗಳೊಂದಿಗೆ ಸಂವಾದ'],
+    ['s09', 'Violin and voice', 'ಪಿಟೀಲು ಮತ್ತು ಗಾಯನ']
+  ].map(function (x) { return { src: 'assets/geetha/' + x[0] + '.webp', en: x[1], kn: x[2] }; });
   var GALLERY_BASE = [
     { src: 'assets/img/kanakaraju.webp', en: 'C. Kanakaraju', kn: 'ಸಿ. ಕನಕರಾಜು' },
     { src: 'assets/img/lakshmi.webp', en: 'Lakshmi, in the Mysuru painting tradition', kn: 'ಮೈಸೂರು ಶೈಲಿಯ ಲಕ್ಷ್ಮೀ ಚಿತ್ರ' }
@@ -263,6 +275,7 @@
         }).catch(function () {});
     }
     var a = $('#awardAcc'); if (a) new Accordion(a, DVG_PHOTOS);
+    var gs = $('#geethaAcc'); if (gs) new Accordion(gs, GEETHA);
   }
 
   /* ---------- lightbox (created on demand) ---------- */
