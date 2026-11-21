@@ -306,6 +306,7 @@
     }
     function origin() { // live position of the palm, follows reveal and float motion
       var r = hero.getBoundingClientRect(), l = lk.getBoundingClientRect();
+      if (Math.abs(r.width - W) > 1 || Math.abs(r.height - H) > 1) { W = r.width; H = r.height; cv.width = W * dpr; cv.height = H * dpr; ctx.setTransform(dpr, 0, 0, dpr, 0, 0); }
       ox = l.left - r.left + l.width * +lk.dataset.hx; oy = l.top - r.top + l.height * +lk.dataset.hy;
     }
     function spawn() {
@@ -345,6 +346,7 @@
     size();
     if (lk.complete) size(); else lk.addEventListener('load', size);
     window.addEventListener('resize', size);
+    if ('ResizeObserver' in window) new ResizeObserver(size).observe(hero);
     if ('IntersectionObserver' in window) new IntersectionObserver(function (es) { if (es[0].isIntersecting) start(); else run = false; }).observe(hero);
     document.addEventListener('visibilitychange', function () { if (document.hidden) run = false; else start(); });
     last = performance.now(); requestAnimationFrame(frame);
