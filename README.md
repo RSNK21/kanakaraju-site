@@ -32,7 +32,9 @@ git remote add origin https://github.com/RSNK21/kanakaraju-site.git
 git push -u origin main
 ```
 
-Then in the repo: Settings > Pages > Deploy from branch > `main` / root. The `CNAME` file already says `dhanakanaka.in`.
+Pages is live from the `gh-pages` branch at https://rsnk21.github.io/kanakaraju-site/ (keep `main` and `gh-pages` in step: `git push origin main main:gh-pages`).
+
+To switch on dhanakanaka.in once the domain is registered and its DNS is set: add a file named `CNAME` containing `dhanakanaka.in`, push it, then in Settings > Pages enter the custom domain.
 
 At your domain registrar, point the domain to GitHub Pages:
 
